@@ -6,6 +6,27 @@ public class Osoba {
     private String jmeno;
     private String prijmeni;
     private String rodneCislo;
+    private String pracovniEmail;
+    private String soukromyEmail;
+    public Adresa adresa;
+
+    public String getPracovniEmail() {
+        //possible to add validation
+        return pracovniEmail;
+    }
+
+    public void setPracovniEmail(String pracovniEmail) {
+        //possible to add validation
+        this.pracovniEmail = pracovniEmail;
+    }
+
+    public String getSoukromyEmail() {
+        return soukromyEmail;
+    }
+
+    public void setSoukromyEmail(String soukromyEmail) {
+        this.soukromyEmail = soukromyEmail;
+    }
 
     private Telefon telefon;
 
@@ -58,6 +79,14 @@ public class Osoba {
 
     public void setTelefon(Telefon telefon) {
         this.telefon = telefon;
+    }
+
+    public Adresa getAdresa() {
+        return adresa;
+    }
+
+    public void setAdresa(Adresa adresa) {
+        this.adresa = adresa;
     }
 
     public String toString() {
